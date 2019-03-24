@@ -1,4 +1,4 @@
-# MyApp
+# Angular Weather App
 
 This is a web application showing the weather forecast in Edinburgh for the following days.
 
