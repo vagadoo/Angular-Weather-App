@@ -43,3 +43,16 @@ Run command: `npm install`
 Run command: `./node_modules/@angular/cli/bin/ng serve --open`
 
 If everything is done correctly, the application will build and the browser will open a new tab with the url http://localhost:4200 were the application is successfully served.
+
+## Future additions
+
+If I had more time:
+
+I would write unit tests, testing components' methods in different possible parameter cases.
+
+I would create Protractor End2End tests using a page model pattern.
+
+I would use ngrx (Andular equivelant of Redux)
+
+I would make the Weather API calls go through my server and keep the api key into an encrypted config file.
+
