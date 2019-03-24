@@ -1,0 +1,14 @@
+<div class="card" *ngIf="forecast !== null">
+  <div class="card-body">
+    <h5 class="card-title">
+        <div>{{start | date:'hh:mm'}} - {{end | date:'hh:mm'}}</div>
+        <hr>
+        <div>{{condition | uppercase}}</div>
+    </h5>
+    <hr>
+    <div class="card-text">
+        <p>Temperature: {{temperature}}&deg;C<br></p>
+        <p>Humidity: {{humidity}}&#37;</p>
+    </div>
+  </div>
+</div>

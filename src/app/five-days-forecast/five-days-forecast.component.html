@@ -1,0 +1,21 @@
+<h3>Five days weather forecast for the city of <b>Edinburgh</b></h3>
+<br>
+<div *ngIf="fiveDaysForcasts"> 
+  <mat-accordion >
+    <mat-expansion-panel *ngFor="let dayForecasts of fiveDaysForcasts;">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                {{dayForecasts[0].dateTime.toLocaleDateString()}}
+            </mat-panel-title>
+            <mat-panel-description>
+                {{getAverageDayTemperature(dayForecasts)}}&deg;C
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="row">
+            <div class="col-md-4" *ngFor="let forecast of dayForecasts">
+                <three-hours-forecast [forecast]="forecast"></three-hours-forecast>
+            </div>             
+        </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
